@@ -1,3 +1,11 @@
+const loader = document.querySelector(".pre-loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+
 const getElement = (selector) => {
     const element = document.querySelector(selector)  
     if (element) return element
