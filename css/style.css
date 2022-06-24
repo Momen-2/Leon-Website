@@ -320,6 +320,14 @@ i {
     width: 1170px;
   }
 }
+@media (max-width: 767px) {
+  .main-heading h2 {
+    font-size: 60px;
+  }
+  .main-heading p {
+    margin-top: -20px;
+  }
+}
 
 .navbar {
   padding: 20px;
@@ -392,17 +400,12 @@ i {
 .landing {
   background-image: url(../images/landing.jpg);
   background-size: cover;
-  height: calc(100vh - 150px);
-  position: relative;
+  height: 350px;
   margin-top: 0;
-  z-index: -4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .landing .text {
   margin: 0 auto;
-  margin-top: 0;
+  margin-top: 80px;
   text-align: center;
   width: 320px;
   max-width: 100%;
@@ -410,6 +413,14 @@ i {
 .landing .text h2 {
   font-size: 55px;
   color: var(--primary-600);
+}
+@media only screen and (min-width: 1024px){
+  .landing {
+      height: 430px;
+  }
+  .landing .text {
+    margin-top: 150px;
+  }
 }
 
 .features-section {
