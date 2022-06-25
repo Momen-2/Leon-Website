@@ -518,6 +518,48 @@ i {
   }
 }
 
+.about-section .image {
+  position: relative;
+  width: 300px;
+  height: 330px;
+}
+.about-section .image::before {
+  content: "";
+  width: 100px;
+  height: 390px;
+  background-color: #3f6375;
+  position: absolute;
+  top: -30px;
+  left: 240px;
+  z-index: -900;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.about .text {
+  flex-basis: calc(100% - 390px);
+}
+.about .text hr {
+  width: 450px;
+  display: inline-block;
+  height: 3px;
+  background-color: var(--primary-400);
+  border: none;
+}
+@media (max-width: 992px) {
+  .about-section .image {
+    display: none;
+  }
+  .about .text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer-section {
   text-align: center;
   height: 4rem;
