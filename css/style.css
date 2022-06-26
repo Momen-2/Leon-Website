@@ -560,6 +560,26 @@ i {
   }
 }
 
+.contact-section .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-section .info h3 {
+  color: var(--grey-500);
+  margin-bottom: 0;
+}
+.contact-section .info a {
+  color: var(--primary-600);
+  font-size: 50px;
+}
+.contact-section .info .social {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .footer-section {
   text-align: center;
   height: 4rem;
