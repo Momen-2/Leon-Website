@@ -560,11 +560,18 @@ i {
   }
 }
 
+.contact-section {
+  background-color: var(--grey-50);
+}
+.contact-section .main-heading {
+  padding-top: 2em;
+}
 .contact-section .info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2em;
 }
 .contact-section .info h3 {
   color: var(--grey-500);
@@ -588,7 +595,6 @@ i {
   justify-content: center;
   background: var(--black);
   color: var(--white);
-  margin-top: 1.6rem;
 }
 .footer-section p {
   margin-bottom: 0;
